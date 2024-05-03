@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #D7CDCC; */
+}
+
+/*home page*/
+
+.home-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #D7CDCC;
+}
+
+.card{
+    background-color: white;
+    margin-top: 150px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+    font-family: "Roboto Mono", monospace;
+}
+
+.card h1{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.card h1 span{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 3rem;
+    color: #71B48D;
+}
+
+.card .buttons{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+.buttons .button{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    color:white;
+}
+
+.buttons .button:hover{
+    background-color: #629d7b;
+}
+
+.buttons .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+/*login page*/
+
+.login-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #D7CDCC;
+}
+
+.login-page .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form .error-message{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.login-page .form input{
+    margin-bottom: 10px;
+    padding-left: 5px;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.login-page .form input:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+
+.login-page .card a{
+    text-decoration: none;
+}
+
+.login-page .card .button{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    color:white;
+    margin: auto;
+    cursor: pointer;
+}
+
+.login-page .card .button:hover{
+    background-color: #629d7b;
+}
+
+.login-page .card .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+.login-page .card p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.login-page .card p span{
+    color:#71B48D;
+}
+
+.login-page .card p span:hover{
+    color:#629d7b;
+}
+
+.login-page .card p span:active{
+    color: #48A9A6;
+}
+
+/*Sign up page*/
+
+.sign-up-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #D7CDCC;
+}
+
+.sign-up-page .card h1{
+    margin-top: 30px;
+}
+
+.sign-up-page .card .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sign-up-page .card .form input{
+    margin-bottom: 10px;
+    padding-left: 5px;
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.sign-up-page .card .form input:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+.sign-up-page .card a{
+    text-decoration: none;
+}
+
+.sign-up-page .card .button{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    color:white;
+    margin: auto;
+    cursor: pointer;
+}
+
+.sign-up-page .card .button:hover{
+    background-color: #629d7b;
+}
+
+.sign-up-page .card .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75); 
+}
+
+.sign-up-page .card p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sign-up-page .card p span{
+    color:#71B48D;
+}
+
+.sign-up-page .card p span:hover{
+    color:#629d7b;
+}
+
+.sign-up-page .card p span:active{
+    color: #48A9A6;
+}
+
+/*Root*/
+
+nav{
+    background-color:#D7CDCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #484A47;
+}
+
+nav p{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 2.5rem;
+    color: #71B48D;
+    margin-left: 10px;
+}
+
+nav .links{
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.1rem;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+nav .links a{
+    /* text-decoration: none; */
+    color: white;
+}
+
+nav .links a:hover{
+    color:#48A9A6;
+}
+
+nav .links a.active{
+    color:#0A014F;
+}
+
+/*Index*/
+
+.index{
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 2rem;
+    margin-top: 200px;
+}
+
+/*Create Lobby*/
+
+.create-lobby-page{
+    margin-top: 100px;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-lobby-page h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.create-lobby-page input{
+    margin-bottom: 20px;
+    width: 25%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.create-lobby-page input:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+.create-lobby-page .error-message{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.create-lobby-page .button{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+}
+
+.create-lobby-page .button:hover{
+    background-color: #629d7b;
+}
+
+.create-lobby-page .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75); 
+}
+
+/*View Lobbies*/
+
+.view-lobbies-page{
+    margin-top: 100px;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-lobbies-page h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.view-lobbies-page a{
+    text-decoration: none;
+    color: black;
+}
+
+.view-lobbies-page .lobby{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.view-lobbies-page .lobby:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.view-lobbies-page .lobby .divider{
+    border: 1px solid #71B48D;
+    height: 40px;
+}
+
+.view-lobbies-page .lobby .lobby-name{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.view-lobbies-page .lobby .admin span.isAdmin{
+    color: #71B48D;
+}
+
+.view-lobbies-page .lobby .admin span.isNotAdmin{
+    color: red;
+}
+
+/*View DMs*/
+.direct-messages-page{
+    margin-top: 100px;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direct-messages-page h1{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.direct-messages-page .message-card{
+    width: 600px;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.direct-messages-page .message-card:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.direct-messages-page .message-card .name{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.direct-messages-page .message-card .message-preview{
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.direct-messages-page .message-card a{
+    color:#71B48D;
+}
+
+.direct-messages-page .message-card a:hover{
+    color:#56896b;
+}
+
+.direct-messages-page .new-message a{
+    margin-top: 20px;
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color:white;
+    text-decoration: none;
+}
+
+.direct-messages-page .new-message a:hover{
+    background-color: #629d7b;
+}
+
+.direct-messages-page .new-message a:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+/*Lobby page*/
+
+.lobby .top-bar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+    margin: 20px;
+    border-bottom: 2px solid #484A47;
+}
+
+.lobby .top-bar a{
+    text-decoration: none;
+}
+
+.lobby .top-bar .lobby-name{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.lobby .top-bar .add-new{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    color:white;
+}
+
+.lobby .top-bar .add-new:hover{
+    background-color: #629d7b;
+}
+
+.lobby .top-bar .add-new:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+.lobby .messages{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Roboto Mono", monospace;
+}
+
+.lobby .messages .received-message{
+    background-color: #48A9A6;
+    max-width: 50%;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.lobby .messages .sender-name{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.lobby .messages .icons{
+    display: flex;
+    margin-top: 5px;
+    width:100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.lobby .messages .icons img{
+    margin-right: 5px;
+    height: 20px;
+    width: auto;
+}
+
+.lobby .messages .sent-message{
+    background-color: #71B48D;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.lobby .message-box{
+    display: flex;
+    margin: 20px;
+}
+
+.lobby .message-box input{
+    width: 95%;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 40px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.lobby .message-box input:focus-visible{
+    outline: #71B48D solid 2px;
+}
+
+.lobby .message-box .button{
+    background-color: #71B48D;
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color:white;
+    cursor: pointer;
+}
+
+.lobby .message-box .button:hover{
+    background-color: #629d7b;
+}
+
+.lobby .message-box .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+/*Add New User*/
+
+.addUser h1{
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 500;
+    font-family: "Roboto Mono", monospace;
+}
+
+.addUser .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.addUser .form input{
+    margin-bottom: 10px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.addUser .form input:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+.addUser .button{
+    background-color: #71B48D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    color:white;
+    margin: auto;
+    cursor: pointer;
+    font-family: "Roboto Mono", monospace;
+}
+
+.addUser .button:hover{
+    background-color: #629d7b;
+}
+
+.addUser .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75); 
+}
+
+/*View Direct Message*/
+.messages-container .recipient{
+    font-family: "Roboto Mono", monospace;
+    margin: 20px;
+    border-bottom: 2px solid #484A47;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.messages-container .messages{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Roboto Mono", monospace;
+}
+
+.messages-container .messages .sender-name{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.messages-container .messages .received-message{
+    background-color: #48A9A6;
+    max-width: 50%;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.messages-container .messages .sent-message{
+    background-color: #71B48D;
+    max-width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.messages-container .message-box{
+    display: flex;
+    margin: 20px;
+}
+
+.messages-container .message-box input{
+    width: 95%;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 40px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.messages-container .message-box input:focus-visible{
+    outline: #71B48D solid 2px;
+}
+
+.messages-container .message-box .button{
+    background-color: #71B48D;
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color:white;
+    cursor: pointer;
+}
+
+.messages-container .message-box .button:hover{
+    background-color: #629d7b;
+}
+
+.messages-container .message-box .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+/*New message*/
+.new-message-form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-message-form .to{
+    margin-bottom: 10px;
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+}
+
+.new-message-form .to:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+.new-message-form .message{
+    margin-bottom: 10px;
+    width: 30%;
+    height: 100px;
+    border-radius: 5px;
+    font-family: "Roboto Mono", monospace;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.new-message-form .message:focus-visible{
+    outline: none;
+    border: 2px solid #484A47;
+}
+
+.new-message-form .button{
+    background-color: #71B48D;
+    margin-left: 5px;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+    color:white;
+    cursor: pointer;
+}
+
+.new-message-form .button:hover{
+    background-color: #629d7b;
+}
+
+.new-message-form .button:active{
+    box-shadow: inset 0px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+
+
