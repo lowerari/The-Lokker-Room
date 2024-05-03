@@ -32,4 +32,4 @@ Welcome to the Lokker Room App. This is a (practice) messaging app for teams wit
 
 ## Live Link
 
-- TBA
+- https://thelokkerroom.netlify.app/
