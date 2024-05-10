@@ -515,7 +515,7 @@ nav .links a.active{
     width: 80%;
     margin: auto;
 }
-.lobby .top-bar{
+.lobby .top-bar {
     background-color: #72B582;
     color: white;
     height: 46px;
@@ -523,7 +523,7 @@ nav .links a.active{
     justify-content: space-between;
     align-items: center;
     border-radius: 12px;
-    padding: 8px 5px 8px ;
+    padding: 8px 5px 8px;
     font-family: "Roboto Mono", monospace;
     margin: 20px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.178);
@@ -547,7 +547,7 @@ nav .links a.active{
 
 }
 
-.lobby .top-bar .add-new:hover{
+.lobby .top-bar .add-new:hover {
     background-color: #913B55;
 }
 
