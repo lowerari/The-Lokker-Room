@@ -12,10 +12,10 @@ export default function Home(){
                 </h1>
                 <div className="buttons">
                     <Link to="/login">
-                        <div className="button">Login</div>
+                        <div className="button">LOGIN</div>
                     </Link>
                     <Link to="/register">
-                        <div className="button">Sign Up</div>
+                        <div className="button">SIGN UP</div>
                     </Link>
                 </div>
             </div>
